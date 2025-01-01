@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import mocky from "../assets/mocky.png";
 
-export default function WebDesignSection() {
+export default function ProjectShowcase() {
   return (
     <section className="projects container mx-auto px-4 py-24 grid grid-cols-1 md:grid-cols-[1fr,2fr,1fr] gap-8 items-start">
       <div>
