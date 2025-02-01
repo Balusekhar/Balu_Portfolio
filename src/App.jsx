@@ -2,8 +2,7 @@ import { Certifications } from "./components/Certification-Showcase";
 import { ContactCard } from "./components/ContactCard";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
-import ProjectCards from "./components/project-card";
-import ProjectShowcase from "./components/Project-Showcase";
+import ProjectCards from "./components/Project-Card";
 import SkillsShowcase from "./components/Skills-Showcase";
 import Timeline from "./components/Timeline";
 
