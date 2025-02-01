@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SkillsShowcase() {
   return (
-    <div className="w-full py-10">
+    <div className="w-full pt-20">
       <div className="grid grid-cols-1 md:grid-cols-1 gap-10 max-w-6xl mx-auto">
         {/* Skills Grid */}
         <div className="grid grid-cols-3 md:grid-cols-6 gap-4">

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const SlideTabsExample = () => {
   return (
-    <div className="bg-transparent py-2">
+    <div className="bg-transparent py-2 w-full text-center">
       <SlideTabs />
     </div>
   );
@@ -24,17 +24,25 @@ const SlideTabs = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1">
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>Projects</Tab>
-      <Tab setPosition={setPosition}>Experience</Tab>
-      <Tab setPosition={setPosition}>contact</Tab>
+      className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-gray-200 p-1">
+      <Tab setPosition={setPosition} href="#home">
+        Home
+      </Tab>
+      <Tab setPosition={setPosition} href="#projects">
+        Projects
+      </Tab>
+      <Tab setPosition={setPosition} href="#education">
+        Experience
+      </Tab>
+      <Tab setPosition={setPosition} href="#contact">
+        Contact
+      </Tab>
       <Cursor position={position} />
     </ul>
   );
 };
 
-const Tab = ({ children, setPosition }) => {
+const Tab = ({ children, setPosition, href }) => {
   const ref = useRef(null);
 
   return (
@@ -51,8 +59,10 @@ const Tab = ({ children, setPosition }) => {
           opacity: 1,
         });
       }}
-      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase hover:text-white text-black md:px-5 md:py-3 md:text-base">
-      {children}
+      className="relative z-10 block cursor-pointer px-3 py-1.5 text-xs uppercase hover:text-black text-black md:px-5 md:py-3 md:text-base">
+      <a href={href} className="w-full h-full block">
+        {children}
+      </a>
     </li>
   );
 };

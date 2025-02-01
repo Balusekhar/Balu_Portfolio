@@ -1,23 +1,43 @@
+import mocky from "../assets/mocky.png";
+import byteshare from "../assets/byteshare.png";
+import devbytes from "../assets/devbytes.png";
+
 const projects = [
   {
     id: 1,
-    projectName: "Mocky",
-    description:
-      "A modern and responsive web design project that focuses on user experience and aesthetics.",
-    image: "path/to/web-design-image.jpg", // Replace with actual image path
+    name: "Mocky",
+    description: "Mocky is a AI Mock interview platform built with Next.js 15.",
+    image: mocky, // Updated to use mocky image
+    tags: [
+      "Gemini API",
+      "Next.js 15",
+      "TypeScript",
+      "neondb",
+      "Prisma",
+      "TailwindCSS",
+    ],
+    website: "https://mocky-chi.vercel.app/",
+    source: "https://github.com/Balusekhar/mocky",
   },
   {
     id: 2,
-    projectName: "Byteshare",
-    description:
-      "An e-commerce platform with integrated payment gateways and a user-friendly interface.",
-    image: "path/to/ecommerce-image.jpg", // Replace with actual image path
+    name: "Byteshare",
+    description: "Share files instantly with Byteshare. No login Required.",
+    image: byteshare, // Updated to use mocky image
+    tags: ["Next.js", "TypeScript", "AWS S3", "TailwindCSS", "Shadcn UI"],
+    website: "https://byteshare-ecru.vercel.app/",
+    source: "https://github.com/Balusekhar/byteshare",
   },
   {
     id: 3,
-    projectName: "Social Media App",
+    name: "SimpleStorage",
     description:
-      "A social media app with features like posts, messaging, and real-time notifications.",
-    image: "path/to/social-media-image.jpg", // Replace with actual image path
+      "Simple Storage is a cloud storage platform powered by aws s3.",
+    image: devbytes,
+    tags: ["Next.js", "Aws S3", "Typescript", "TailwindCSS", "Next Auth"],
+    website: "https://simplestorage-omega.vercel.app/",
+    source: "https://github.com/Balusekhar/simplestorage",
   },
 ];
+
+export default projects;

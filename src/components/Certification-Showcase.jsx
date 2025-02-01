@@ -3,7 +3,7 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export function Certifications() {
   return (
-    <div className="flex justify-center items-center h-[30rem] flex-col px-4">
+    <div className="flex justify-center items-center h-[25rem] flex-col px-4">
       <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl md:max-w-5xl mx-auto mb-10">
         I've completed certifications in{" "}
         <LinkPreview

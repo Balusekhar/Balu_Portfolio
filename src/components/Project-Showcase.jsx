@@ -1,10 +1,9 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import mocky from "../assets/mocky.png";
 
 export default function ProjectShowcase() {
   return (
-    <section className="projects container mx-auto px-4 py-24 grid grid-cols-1 md:grid-cols-[1fr,2fr,1fr] gap-8 items-start">
+    <section className="projects container mx-auto px-4 pt-24 grid grid-cols-1 md:grid-cols-[1fr,2fr,1fr] gap-8 items-start">
       <div>
         <h2 className="text-4xl  text-white md:text-5xl font-normal mb-4">
           Web Design

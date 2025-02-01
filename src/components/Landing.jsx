@@ -7,8 +7,8 @@ function Landing() {
   return (
     <div className="min-h-screen">
       {/* Header - Now left-aligned */}
-      <header className="w-full py-4 px-6">
-        <nav className="max-w-7xl mx-auto">
+      <header className="w-full py-4">
+        <nav className="mx-auto">
           <SlideTabsExample />
         </nav>
       </header>
@@ -41,7 +41,9 @@ function Landing() {
           {/* Shimmer Buttons */}
           <div className="flex flex-col sm:flex-row gap-8 justify-center pt-8">
             {/* Resume Button */}
-            <ShimmerButton className="w-[200px] h-[56px] shadow-2xl">
+            <ShimmerButton
+              className="w-[200px] h-[56px] shadow-2xl"
+              onClick={() => window.open("/Balu_Resume.pdf", "_blank")}>
               <span className="whitespace-pre-wrap text-center text-lg font-medium leading-none tracking-tight text-white">
                 Resume
               </span>

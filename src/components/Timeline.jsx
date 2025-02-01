@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { Laptop, Phone, Camera, Watch } from "lucide-react";
+import { Building2, Briefcase, University, GraduationCap } from "lucide-react";
 import "react-vertical-timeline-component/style.min.css"; // Import timeline styles
 
 function Timeline() {
@@ -15,7 +15,7 @@ function Timeline() {
       <VerticalTimeline lineColor="#ffffff55">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="1984"
+          date="2018-2022"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
             background: "#0d0d0d",
@@ -24,20 +24,19 @@ function Timeline() {
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
-          icon={<Laptop />}>
+          icon={<University />}>
           <h3 className="vertical-timeline-element-title">
-            First Macintosh Computer
+            Chennai Institute of Technology, B.Tech
           </h3>
           <p>
-            The Apple Macintosh—later rebranded as the Macintosh 128K—is the
-            original Apple Macintosh personal computer. It played a pivotal role
-            in establishing desktop publishing as a general office function.
+            I completed my B.Tech in Electronics and Communication Engineering,
+            graduating with a CGPA of 8.5.
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="1998"
+          date="2022"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
             background: "#0d0d0d",
@@ -46,18 +45,18 @@ function Timeline() {
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
-          icon={<Phone />}>
-          <h3 className="vertical-timeline-element-title">iMac</h3>
+          icon={<Building2 />}>
+          <h3 className="vertical-timeline-element-title">Areteans</h3>
           <p>
-            iMac is a family of all-in-one Mac desktop computers designed and
-            built by Apple Inc. It has been the primary part of Apple's consumer
-            desktop offerings since its debut in August 1998.
+            I completed a 6-month internship at Areteans, where I applied
+            various Pega concepts. During my time there, I developed an
+            insurance application using Pega.
           </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2001"
+          date="2023-2025"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
             background: "#0d0d0d",
@@ -66,11 +65,33 @@ function Timeline() {
             boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
-          icon={<Camera />}>
-          <h3 className="vertical-timeline-element-title">iPod</h3>
+          icon={<GraduationCap />}>
+          <h3 className="vertical-timeline-element-title">
+            University of North Texas, M.S
+          </h3>
           <p>
-            The iPod is a discontinued series of portable media players and
-            multi-purpose mobile devices designed and marketed by Apple Inc.
+            I am currently pursuing my Master’s in Computer Science at the
+            University of North Texas, expected to graduate with a CGPA of 3.8.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2024"
+          iconStyle={{ background: "#1a1a1a", color: "#fff" }}
+          contentStyle={{
+            background: "#0d0d0d",
+            color: "#ffffff",
+            border: "1px solid #333",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
+          icon={<Briefcase />}>
+          <h3 className="vertical-timeline-element-title">MS Info Tech LLC</h3>
+          <p>
+            In 2024, I worked as a Full Stack Engineer at MS Info Tech LLC.
+            During my tenure, I developed several websites and contributed to
+            employee management using Google Sheets App Script.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
