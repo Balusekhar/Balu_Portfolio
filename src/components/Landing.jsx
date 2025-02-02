@@ -7,35 +7,38 @@ import { Dribbble, Linkedin, Twitter } from "lucide-react";
 
 function Landing() {
   return (
-    <div className="h-screen bg-white w-screen flex flex-col">
-      {/* Header - Now left-aligned */}
+    <div className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden">
+      {/* Header - Left-aligned */}
       <Header />
 
       {/* Main Content */}
-      <main className="container mx-auto px-4 flex-1 flex items-center">
-        <div className="flex flex-col gap-8">
+      <main className="container mx-auto px-6 sm:px-12 flex-1 flex items-center pb-8 pt-24 sm:pt-32">
+        <div className="flex flex-col gap-10 lg:gap-6">
+          {/* Profile Image */}
           <div className="flex items-center">
             <img
               src={profilePhoto}
-              alt="Profile"
-              className="w-32 h-32 rounded-full object-cover"
+              className="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover mt-6 sm:mt-0"
             />
           </div>
 
-          <h1 className="heading-text text-[55px] leading-[66px] font-manrope font-normal max-w-[1200px]">
+          {/* Heading */}
+          <h1 className="heading-text text-4xl sm:text-[55px] lg:text-[55px] lg:leading-[66px] leading-tight sm:leading-[66px] font-manrope font-normal max-w-[1200px]">
             I’m Tirupati Balu Chandrasekhar, a Full Stack Web Developer
-            specializing in React, Next.js and cloud-based applications.
+            specializing in React, Next.js, and Typescript.
           </h1>
 
-          <p className="description-text text-lg font-normal leading-[30px] font-manrope max-w-[800px]">
+          {/* Description */}
+          <p className="description-text lg:text-lg text-base  font-normal leading-relaxed lg:leading-[30px] font-manrope max-w-[800px]">
             I enjoy building practical and efficient web solutions, leveraging
             my experience in frontend frameworks, backend integrations, and AWS
             services for seamless performance.
           </p>
 
+          {/* Resume Button */}
           <div className="flex gap-4">
             <ShimmerButton
-              className="w-[200px] h-[56px] shadow-2xl"
+              className="w-[180px] sm:w-[200px] h-[50px] sm:h-[56px] shadow-2xl"
               onClick={() => window.open("/Balu_Resume.pdf", "_blank")}>
               <span className="whitespace-pre-wrap text-center text-lg font-medium leading-none tracking-tight text-white">
                 Resume
