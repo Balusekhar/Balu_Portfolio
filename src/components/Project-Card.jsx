@@ -30,7 +30,7 @@ export default function ProjectCards() {
                 <Badge
                   key={tag}
                   variant="destructive"
-                  className="px-4 py-2 text-center text-white bg-slate-800 border border-gray-500 rounded-lg shadow-sm">
+                  className="px-4 py-2 text-center text-white bg-primary border border-gray-500 rounded-lg shadow-sm">
                   {tag}
                 </Badge>
               ))}

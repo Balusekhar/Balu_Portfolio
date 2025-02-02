@@ -3,8 +3,8 @@ import { LinkPreview } from "@/components/ui/link-preview";
 
 export function Certifications() {
   return (
-    <div className="flex justify-center items-center h-[25rem] flex-col px-4">
-      <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl md:max-w-5xl mx-auto mb-10">
+    <div className="flex justify-center items-start h-[25rem] flex-col">
+      <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl md:max-w-5xl mb-10">
         I've completed certifications in{" "}
         <LinkPreview
           url="https://drive.google.com/drive/folders/1SKBECAWf0gCebAdAmrrkHX4opsYibQJT"
@@ -19,7 +19,7 @@ export function Certifications() {
         </LinkPreview>{" "}
         expanding my skills in web development and version control.
       </div>
-      <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl md:max-w-5xl mx-auto">
+      <div className="text-neutral-500 dark:text-neutral-400 text-xl md:text-3xl md:max-w-5xl">
         I've earned certifications as a{" "}
         <LinkPreview
           url="https://drive.google.com/file/d/10GczpW9vpxgf6UPI8Vn6IiEozW-YJ9-N/view?usp=sharing"

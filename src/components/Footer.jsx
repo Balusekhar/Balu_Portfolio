@@ -1,18 +1,15 @@
 import React from "react";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { SiGithub } from "react-icons/si";
-import { FaMediumM, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between items-center px-6 py-6 bg-transparent text-white">
+    <footer className="flex flex-col md:flex-row font-manrope justify-between items-center px-6 py-6 bg-transparent text-primary border-t border-gray-200">
       {/* Left Section: Copyright */}
-      <div className="text-sm">
-        © 2024 Balu Chandrasekhar. All Rights Reserved.
+      <div className="text-sm mb-4 md:mb-0">
+        © 2025 Balu Chandrasekhar. All Rights Reserved.
       </div>
 
-      {/* Middle Section: Header Links */}
-      <nav className="flex gap-8 text-sm me-24">
+      {/* Right Section: Nav Links */}
+      <nav className="flex flex-col md:flex-row gap-4 md:gap-8 text-sm text-center">
         <a href="#home" className="hover:underline">
           Home
         </a>
@@ -26,38 +23,6 @@ const Footer = () => {
           Contact
         </a>
       </nav>
-
-      {/* Right Section: Social Links */}
-      <div className="flex gap-4">
-        <a
-          href="mailto:balusekhar8@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-gray-400">
-          <MdOutlineMailOutline />
-        </a>
-        <a
-          href="https://github.com/Balusekhar"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-gray-400">
-          <SiGithub />
-        </a>
-        <a
-          href="https://medium.com/@balusekhar8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-gray-400">
-          <FaMediumM />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/baluchandrasekhar/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xl hover:text-gray-400">
-          <FaLinkedinIn />
-        </a>
-      </div>
     </footer>
   );
 };

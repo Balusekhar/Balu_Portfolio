@@ -8,20 +8,18 @@ import "react-vertical-timeline-component/style.min.css"; // Import timeline sty
 
 function Timeline() {
   return (
-    <section className="text-white py-10 relative">
+    <section className="py-10 relative">
       {/* Dark background */}
-      <div className="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
-
-      <VerticalTimeline lineColor="#ffffff55">
+      <VerticalTimeline lineColor="#2a2a28">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2018-2022"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
-            background: "#0d0d0d",
+            background: "#2a2a28",
             color: "#ffffff",
             border: "1px solid #333",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
+            boxShadow: "0 4px 4px rgba(0, 0, 0, 0.4)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
           icon={<University />}>
@@ -39,10 +37,10 @@ function Timeline() {
           date="2022"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
-            background: "#0d0d0d",
+            background: "#2a2a28",
             color: "#ffffff",
             border: "1px solid #333",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
+            boxShadow: "0 4px 4px rgba(0, 0, 0, 0.4)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
           icon={<Building2 />}>
@@ -59,10 +57,10 @@ function Timeline() {
           date="2023-2025"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
-            background: "#0d0d0d",
+            background: "#2a2a28",
             color: "#ffffff",
             border: "1px solid #333",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
+            boxShadow: "0 4px 4px rgba(0, 0, 0, 0.4)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
           icon={<GraduationCap />}>
@@ -80,10 +78,10 @@ function Timeline() {
           date="2024"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
-            background: "#0d0d0d",
+            background: "#2a2a28",
             color: "#ffffff",
             border: "1px solid #333",
-            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.8)",
+            boxShadow: "0 4px 4px rgba(0, 0, 0, 0.4)",
           }}
           contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
           icon={<Briefcase />}>
