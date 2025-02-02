@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
   	extend: {
+		fontFamily: {
+			manrope: ["Manrope", "sans-serif"],
+		  },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -24,7 +27,7 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: '#fd406a',
+  				DEFAULT: '#2a2a28',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {

@@ -23,7 +23,7 @@ export default function App() {
       </div>
 
       {/* Education */}
-      <div id="education" className="min-h-screen pt-20">
+      <div id="experience" className="min-h-screen pt-20">
         <h1 className="text-5xl text-primary w-full text-center h-full pb-16 transition-all duration-300 hover:scale-110">
           Experience and Education
         </h1>
