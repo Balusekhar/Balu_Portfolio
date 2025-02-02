@@ -1,13 +1,11 @@
 import React from "react";
-import { SlideTabsExample } from "./SlideTabs";
-import ShimmerButton from "./ui/shimmer-button";
 import Header from "./Header";
 import profilePhoto from "../assets/balu_main.png";
-import { Dribbble, Linkedin, Twitter } from "lucide-react";
+import { ShimmerButton } from "./ui/shimmer-button";
 
 function Landing() {
   return (
-    <div className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden">
+    <div className="min-h-screen bg-white w-full flex flex-col overflow-x-hidden ">
       {/* Header - Left-aligned */}
       <Header />
 
@@ -29,7 +27,7 @@ function Landing() {
           </h1>
 
           {/* Description */}
-          <p className="description-text lg:text-lg text-base  font-normal leading-relaxed lg:leading-[30px] font-manrope max-w-[800px]">
+          <p className="description-text lg:text-lg text-base font-normal leading-relaxed lg:leading-[30px] font-manrope max-w-[800px]">
             I enjoy building practical and efficient web solutions, leveraging
             my experience in frontend frameworks, backend integrations, and AWS
             services for seamless performance.
@@ -40,7 +38,7 @@ function Landing() {
             <ShimmerButton
               className="w-[180px] sm:w-[200px] h-[50px] sm:h-[56px] shadow-2xl"
               onClick={() => window.open("/Balu_Resume.pdf", "_blank")}>
-              <span className="whitespace-pre-wrap text-center text-lg font-medium leading-none tracking-tight text-white">
+              <span className="text-center text-lg font-medium leading-none tracking-tight text-white">
                 Resume
               </span>
             </ShimmerButton>

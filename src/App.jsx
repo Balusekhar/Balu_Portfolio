@@ -9,19 +9,23 @@ import Timeline from "./components/Timeline";
 export default function App() {
   return (
     <div id="home" className="min-h-screen relative overflow-x-hidden">
-      {/* Background */}
-      <div className="absolute top-0 z-[-2] h-full w-full bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
-
       {/* Landing Page */}
+
       <Landing />
 
       {/* Projects */}
-      <div id="projects" className="min-h-screen px-4">
-        <h1 className="text-3xl sm:text-5xl mt-8 text-primary max-w-full text-center h-full pt-10 transition-all duration-300 hover:scale-110">
-          Project Showcase
-        </h1>
-        <div className="max-w-5xl mx-auto">
-          <ProjectCards />
+      <div id="projects" className="min-h-screen bg-secondary">
+        <div className="container mx-auto px-6 sm:px-12 py-10 sm:py-20">
+          <h1 className="text-3xl sm:text-5xl sm:leading-[60px] font-medium text-primary max-w-full text-left h-full pb-5">
+            Selected Projects
+          </h1>
+          <p className="description-text lg:text-lg text-base font-normal leading-relaxed lg:leading-[30px] font-manrope max-w-[800px] pb-10">
+            Explore my curated projects, highlighting my focus on building
+            functional and efficient web solutions.
+          </p>
+          <div className="max-w-6xl">
+            <ProjectCards />
+          </div>
         </div>
       </div>
 

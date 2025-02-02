@@ -14,7 +14,6 @@ const projects = [
       "TypeScript",
       "neondb",
       "Prisma",
-      "TailwindCSS",
     ],
     website: "https://mocky-chi.vercel.app/",
     source: "https://github.com/Balusekhar/mocky",
