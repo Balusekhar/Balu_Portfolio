@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./Header";
 import profilePhoto from "../assets/balu_main.png";
 import { ShimmerButton } from "./ui/shimmer-button";
+import Header from "./Header";
 
 function Landing() {
   return (

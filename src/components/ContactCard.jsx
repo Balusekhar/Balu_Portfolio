@@ -10,7 +10,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 export const ContactCard = () => {
   return (
-    <div className="bg-transparen tpy-12 text-zinc-50">
+    <div className="bg-transparen text-zinc-50">
       {/* <Logo /> */}
       <motion.div
         initial="initial"
@@ -144,3 +144,4 @@ const SocialsBlock = () => (
 );
 
 export default SocialsBlock;
+
