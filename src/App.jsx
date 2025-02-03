@@ -5,6 +5,7 @@ import Landing from "./components/Landing";
 import ProjectCards from "./components/Project-Card";
 import SkillsShowcase from "./components/Skills-Showcase";
 import Timeline from "./components/Timeline";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -54,7 +55,9 @@ export default function App() {
       </div>
 
       {/* Certifications */}
-      <div id="certifications" className="w-full flex flex-col justify-center h-[700px] bg-stone-800 pt-6 px-4">
+      <div
+        id="certifications"
+        className="w-full flex flex-col justify-center h-[700px] bg-stone-800 pt-6 px-4">
         <div className="container mx-auto px-6 sm:px-12 py-10">
           <h1 className="text-3xl sm:text-5xl text-white max-w-full text-start">
             Certifications
@@ -66,7 +69,9 @@ export default function App() {
       </div>
 
       {/* Contact */}
-      <div id="contact" className="container mx-auto px-6 sm:px-12 py-10 sm:py-20">
+      <div
+        id="contact"
+        className="container mx-auto px-6 sm:px-12 py-10 sm:py-20">
         <h1 className="text-3xl sm:text-5xl text-primary max-w-full text-start mb-10">
           Get In Touch
         </h1>
@@ -79,6 +84,7 @@ export default function App() {
       <div id="footer">
         <Footer />
       </div>
+      <Analytics />
     </div>
   );
 }
