@@ -2,10 +2,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row font-manrope justify-between items-center px-6 py-6 bg-transparent text-primary border-t border-gray-200">
+    <footer className="flex flex-col md:flex-row font-manrope justify-between items-center px-6 py-6 bg-transparent text-foreground border-t border-gray-200">
       {/* Left Section: Copyright */}
       <div className="text-sm mb-4 md:mb-0">
-        © 2025 Balu Chandrasekhar. All Rights Reserved.
+        © 2025 Balu Chandrasekhar, Portfolio - V3.
       </div>
 
       {/* Right Section: Nav Links */}

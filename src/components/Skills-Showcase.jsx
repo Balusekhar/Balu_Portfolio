@@ -3,18 +3,25 @@ import React from "react";
 
 export default function SkillsShowcase() {
   return (
-    <div className="w-full pt-20">
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-10 max-w-6xl mx-auto">
-        {/* Skills Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="px-4 py-2 text-center text-white bg-[#121212] border border-gray-500 rounded-lg shadow-sm">
-              {skill}
+    <div className="container mx-auto px-4 py-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        {skills.map((skill, index) => (
+          <div
+            key={skill.name}
+            className="flex items-center gap-4 p-4 rounded-lg border border-dashed border-gray-200 hover:border-gray-300 transition-colors">
+            <div className="h-12 w-12 relative shrink-0">
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="object-cover rounded-lg w-full h-full"
+              />
             </div>
-          ))}
-        </div>
+            <div className="flex flex-col">
+              <h3 className="font-medium text-foreground">{skill.name}</h3>
+              <p className="text-sm text-gray-500">{skill.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

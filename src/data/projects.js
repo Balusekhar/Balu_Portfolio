@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     name: "Mocky",
-    description: "Mocky is a AI Mock interview platform built with Next.js 15.",
+    description: "Mocky is an AI-powered mock interview platform designed to help users prepare for technical interviews. It allows users to select a technical topic, role, duration, and experience level to simulate a realistic interview experience. ",
     image: mocky,
     tags: ["Gemini API", "Next.js 15", "TypeScript", "neondb", "Prisma"],
     website: "https://mocky-chi.vercel.app/",
@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     name: "Byteshare",
-    description: "Share files instantly with Byteshare. No login Required.",
+    description: "ByteShare is a simple and fast file-sharing web application built with modern web technologies like Next.js 15, typescript and AWS S3. No login required",
     image: byteshare,
     tags: ["Next.js", "TypeScript", "AWS S3", "TailwindCSS", "Shadcn UI"],
     website: "https://byteshare-ecru.vercel.app/",
@@ -25,7 +25,7 @@ const projects = [
     id: 3,
     name: "SimpleStorage",
     description:
-      "Simple Storage is a cloud storage platform powered by aws s3.",
+      "SimpleStorage is a cloud storage platform powered by AWS S3, offering seamless file uploads, efficient organization through sorting, and accelerated retrieval with CloudFront CDN for a faster and more reliable experience.",
     image: simplestorage,
     tags: ["Next.js", "Aws S3", "Typescript", "TailwindCSS", "Next Auth"],
     website: "https://simplestorage-omega.vercel.app/",

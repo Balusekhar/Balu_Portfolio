@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { Building2, Briefcase, University, GraduationCap } from "lucide-react";
-import "react-vertical-timeline-component/style.min.css"; 
+import "react-vertical-timeline-component/style.min.css";
 
 function Timeline() {
   return (
