@@ -12,6 +12,8 @@ import react from "../assets/skills/React.png";
 import redis from "../assets/skills/redis.png";
 import tailwind from "../assets/skills/tailwind.png";
 import typescript from "../assets/skills/typescript.png";
+import springboot from "../assets/skills/springboot.png";
+import jenkins from "../assets/skills/jenkins.png";
 
 const skills = [
   {
@@ -28,6 +30,16 @@ const skills = [
     name: "Kubernetes",
     description: "Container orchestration",
     icon: kubernetes,
+  },
+  {
+    name: "Spring Boot",
+    description: "Backend framework",
+    icon: springboot,
+  },
+  {
+    name: "Jenkins",
+    description: "CI/CD",
+    icon: jenkins,
   },
   {
     name: "Next.js",

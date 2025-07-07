@@ -54,6 +54,27 @@ function Timeline() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          date="2023-2024"
+          iconStyle={{ background: "#1a1a1a", color: "#fff" }}
+          contentStyle={{
+            background: "#2a2a28",
+            color: "#ffffff",
+            border: "1px solid #333",
+            boxShadow: "0 4px 4px rgba(0, 0, 0, 0.4)",
+          }}
+          contentArrowStyle={{ borderRight: "7px solid #0d0d0d" }}
+          icon={<Briefcase />}>
+          <h3 className="vertical-timeline-element-title">Backend Developer</h3>
+          <p>
+            Contributed to the backend of a matchmaking platform using
+            Express.js, TypeScript, AWS, Hasura, and Stripe by building secure
+            APIs, integrating JWT auth, handling payments, and optimizing
+            GraphQL queries with PostgreSQL.
+          </p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
           date="2023-2025"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
@@ -75,7 +96,7 @@ function Timeline() {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2024"
+          date="2025-Present"
           iconStyle={{ background: "#1a1a1a", color: "#fff" }}
           contentStyle={{
             background: "#2a2a28",
@@ -87,9 +108,10 @@ function Timeline() {
           icon={<Briefcase />}>
           <h3 className="vertical-timeline-element-title">MS Info Tech LLC</h3>
           <p>
-            In 2024, I worked as a Full Stack Engineer at MS Info Tech LLC.
-            During my tenure, I developed several websites and contributed to
-            employee management using Google Sheets App Script.
+            I am currently working on developing scalable REST APIs using Spring
+            Boot for features like employee onboarding, payroll, and attendance,
+            while automating HR processes, writing JPA queries, and actively
+            participating in Agile ceremonies.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
