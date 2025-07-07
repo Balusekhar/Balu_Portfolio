@@ -22,8 +22,8 @@ function Landing() {
 
           {/* Heading */}
           <h1 className="heading-text text-4xl sm:text-[55px] lg:text-[55px] lg:leading-[66px] leading-tight sm:leading-[66px] font-manrope font-normal max-w-[1200px]">
-            I’m Tirupati Balu Chandrasekhar, a Full Stack Web Developer
-            specializing in React, Next.js, and Typescript.
+            I’m Tirupati Balu Chandrasekhar, a Full Stack Developer
+            specializing in React, Next.js, Typescript and Spring Boot.
           </h1>
 
           {/* Description */}
