@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight } from "react-icons/fi";
-import { SiGithub} from "react-icons/si";
+import { SiGithub, SiLeetcode} from "react-icons/si";
 import profilePhoto from "../assets/profile.jpg";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaMediumM } from "react-icons/fa";
@@ -119,11 +119,11 @@ const SocialsBlock = () => (
       }}
       className="col-span-6 bg-zinc-50 md:col-span-3">
       <a
-        href="https://medium.com/@balusekhar8"
+        href="https://leetcode.com/u/baluchandrasekhar/"
         target="_blank"
         rel="noopener noreferrer"
         className="grid h-full place-content-center text-3xl text-black">
-        <FaMediumM />
+        <SiLeetcode />
       </a>
     </Block>
     <Block
