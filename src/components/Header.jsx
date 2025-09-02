@@ -16,11 +16,12 @@ function Header() {
     <header className="fixed top-0 left-0 w-full bg-background shadow-sm px-6 sm:px-32 py-4 flex justify-between items-center z-50">
       {/* Logo */}
       <a
-      onClick={(e) => {
-        e.preventDefault();
-        handleScroll("landing");
-      }}
-       href="#" className="text-xl font-medium">
+        onClick={(e) => {
+          e.preventDefault();
+          handleScroll("landing");
+        }}
+        href="#"
+        className="text-xl font-medium">
         Balu Chandrasekhar
       </a>
 
@@ -35,7 +36,7 @@ function Header() {
           }}>
           Projects
         </a>
-        <a
+        {/* <a
           href="#experience"
           className="text-foreground hover:text-primary"
           onClick={(e) => {
@@ -43,7 +44,7 @@ function Header() {
             handleScroll("experience");
           }}>
           Experience
-        </a>
+        </a> */}
         <a
           href="#contact"
           className="text-foreground hover:text-primary"
@@ -56,11 +57,21 @@ function Header() {
         <a
           href="#contact"
           className="text-foreground hover:text-primary"
-          onClick={() => window.open("https://balusekhar.notion.site/Notes-19f2ff9fc9e7804ca0fafd3257a324f2", "_blank")}>
+          onClick={() =>
+            window.open(
+              "https://balusekhar.notion.site/Notes-19f2ff9fc9e7804ca0fafd3257a324f2",
+              "_blank"
+            )
+          }>
           My Notes
         </a>
         <Button
-          onClick={() => window.open("/Balu_Resume.pdf", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/drive/folders/1LQtBwEZaCY3pPKk9QuPPeY1Lnh9CSckR?usp=sharing",
+              "_blank"
+            )
+          }
           variant="outline"
           className="rounded-full">
           Resume
@@ -87,7 +98,7 @@ function Header() {
             }}>
             Projects
           </a>
-          <a
+          {/* <a
             href="#experience"
             className="text-gray-600 hover:text-black"
             onClick={(e) => {
@@ -96,7 +107,7 @@ function Header() {
               setMenuOpen(false);
             }}>
             Experience
-          </a>
+          </a> */}
           <a
             href="#contact"
             className="text-gray-600 hover:text-black"
@@ -108,7 +119,12 @@ function Header() {
             Contact
           </a>
           <Button
-            onClick={() => window.open("/Balu_Resume.pdf", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/drive/folders/1LQtBwEZaCY3pPKk9QuPPeY1Lnh9CSckR?usp=sharing",
+                "_blank"
+              )
+            }
             variant="outline"
             className="rounded-full">
             Resume

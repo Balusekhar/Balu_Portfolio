@@ -1,3 +1,6 @@
+import openai from "../assets/skills/openai.png";
+import langchain from "../assets/skills/langchain.png";
+import rag from "../assets/skills/rag.png";
 import aws from "../assets/skills/aws.png";
 import docker from "../assets/skills/docker.png";
 import express from "../assets/skills/express.png";
@@ -16,6 +19,21 @@ import springboot from "../assets/skills/springboot.png";
 import jenkins from "../assets/skills/jenkins.png";
 
 const skills = [
+  {
+    name: "OpenAI Agent SDK",
+    description: "AI agent development",
+    icon: openai,
+  },
+  {
+    name: "LangChain js",
+    description: "LLM framework",
+    icon: langchain,
+  },
+  {
+    name: "RAG",
+    description: "Knowledge Augmentation",
+    icon: rag,
+  },
   {
     name: "AWS",
     description: "Cloud services",
@@ -79,7 +97,7 @@ const skills = [
   {
     name: "Redis",
     description: "In-memory DB",
-    icon: redis, 
+    icon: redis,
   },
   {
     name: "Git and Github",

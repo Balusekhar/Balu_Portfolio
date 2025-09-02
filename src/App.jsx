@@ -24,7 +24,6 @@ export default function App() {
     };
   }, []);
 
-
   return (
     <div id="home" className="min-h-screen relative overflow-x-hidden">
       {/* Landing Page */}
@@ -47,8 +46,8 @@ export default function App() {
         </div>
       </motion.div>
 
-      {/* Experience & Education */}
-      <motion.div
+      {/* Experience & Education - Commented out for now */}
+      {/* <motion.div
         id="experience"
         className="container mx-auto px-6 sm:px-12 py-10 sm:py-20"
         initial={{ opacity: 0, scale: 0.9 }}
@@ -61,7 +60,7 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <Timeline />
         </div>
-      </motion.div>
+      </motion.div> */}
 
       {/* Skills */}
       <motion.div

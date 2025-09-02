@@ -5,7 +5,9 @@ import Header from "./Header";
 
 function Landing() {
   return (
-    <div id="landing" className="min-h-screen bg-background w-full flex flex-col overflow-x-hidden ">
+    <div
+      id="landing"
+      className="min-h-screen bg-background w-full flex flex-col overflow-x-hidden ">
       {/* Header - Left-aligned */}
       <Header />
 
@@ -22,8 +24,7 @@ function Landing() {
 
           {/* Heading */}
           <h1 className="heading-text text-4xl sm:text-[55px] lg:text-[55px] lg:leading-[66px] leading-tight sm:leading-[66px] font-manrope font-normal max-w-[1200px]">
-            I’m Tirupati Balu Chandrasekhar, a Full Stack Developer
-            specializing in React, Next.js, Typescript and Spring Boot.
+            I’m Tirupati Balu Chandrasekhar, a Full Stack and a Gen AI Developer.
           </h1>
 
           {/* Description */}
@@ -37,7 +38,12 @@ function Landing() {
           <div className="flex gap-4">
             <ShimmerButton
               className="w-[180px] sm:w-[200px] h-[50px] sm:h-[56px]"
-              onClick={() => window.open("/Balu_Resume.pdf", "_blank")}>
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/drive/folders/1LQtBwEZaCY3pPKk9QuPPeY1Lnh9CSckR?usp=sharing",
+                  "_blank"
+                )
+              }>
               <span className="text-center text-lg font-medium leading-none tracking-tight text-white">
                 Resume
               </span>

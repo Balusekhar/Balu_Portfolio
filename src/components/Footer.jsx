@@ -16,8 +16,17 @@ const Footer = () => {
         <a href="#projects" className="hover:underline">
           Projects
         </a>
-        <a href="#experience" className="hover:underline">
-          Experience
+        <a
+          href="#"
+          className="hover:underline"
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(
+              "https://balusekhar.notion.site/Notes-19f2ff9fc9e7804ca0fafd3257a324f2",
+              "_blank"
+            );
+          }}>
+          Notes
         </a>
         <a href="#contact" className="hover:underline">
           Contact
